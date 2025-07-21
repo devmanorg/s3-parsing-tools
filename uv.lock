@@ -1,0 +1,23 @@
+version = 1
+revision = 2
+requires-python = ">=3.12"
+
+[[package]]
+name = "s3-parse-url"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/12/43/dfc39eccabe0282f1c3b87bde91418b68ad30d7a4278403eb2e8d17da97f/s3_parse_url-0.4.0.tar.gz", hash = "sha256:c2aa8d80637f9ce7de4f4cc8f8eb385e38359270009ce0d7bf2f5d89d6b5bbea", size = 6021, upload-time = "2024-03-28T19:54:49.363Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4c/92/bfe0a7a1d01726b1d65a52164048a538c854092013271ed7b95fafba031d/s3_parse_url-0.4.0-py3-none-any.whl", hash = "sha256:d1af86f35f45b2b3460dae2a43c1d41b314504e3b0047b659ec8b7ef134472e8", size = 7614, upload-time = "2024-03-28T19:54:47.712Z" },
+]
+
+[[package]]
+name = "s3-parsing-tools"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "s3-parse-url" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "s3-parse-url", specifier = ">=0.4.0" }]
