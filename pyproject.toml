@@ -1,5 +1,5 @@
 [project]
-name = "s3_parsing_tools"
+name = "s3-parsing-tools"
 version = "0.1.0"
 description = "Tool for parsing S3 credentials"
 readme = "README.md"
